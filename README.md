@@ -16,6 +16,6 @@
 
 ## Assumptions
 
-Length of name, role and attributes is shorter than std::string::max_size
-The ID and salary is larger or equal to 0 and smaller than std::numeric_limits<int>::max()
+Length of name, role and attributes is shorter than std::string::max_size<br/>
+The ID and salary is larger or equal to 0 and smaller than std::numeric_limits<int>::max()<br/>
 The edits made satisfy the above assumptions
