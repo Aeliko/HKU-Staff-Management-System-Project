@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## Problem statement and setting
 
-You can use the [editor on GitHub](https://github.com/Aeliko/HKU-Staff-Management-System-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+  This software is a Staff Management System for a small start-up business with multiple departments. Start up companies usually do not have capital for a large scale human resources department and one manager is responsible for all workers in the company. An effective labour management system is crucial for its operation.<br/>
+  The system aims to efficiently manage and organize human resources of a company and speed up the labour management process. This system provides user friendly environment for manager to read, add, amend and delete information of staff in the business. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Program feature
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1) create a new employee with employee ID, name, age, role, and salary
+2) search for and delete an employee via their ID, name, age or role
+3) fire an employee
+4) edit the details of an existing employee
+5) search for all employees with a salary higher than or lower than a user input
+6) allow adding user-defined attributes, the value of a new attribute of the existing employee should be empty or undefined.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Assumptions
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Aeliko/HKU-Staff-Management-System-Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Length of name, role and attributes is shorter than std::string::max_size
+The ID and salary is larger or equal to 0 and smaller than std::numeric_limits<int>::max()
+The edits made satisfy the above assumptions
