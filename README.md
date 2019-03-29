@@ -1,3 +1,4 @@
+# Staff Management System
 ## Problem statement and setting
 
   This software is a Staff Management System for a small start-up business with multiple departments. Start up companies usually do not have capital for a large scale human resources department and one manager is responsible for all workers in the company. An effective labour management system is crucial for its operation.<br/>
