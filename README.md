@@ -13,6 +13,10 @@
 4) edit the details of an existing employee
 5) search for all employees with a salary higher than or lower than a user input
 6) allow adding user-defined attributes, the value of a new attribute of the existing employee should be empty or undefined.
+7) set target performance for workers and compare it of each staff
+8) keep track of annual leave available for individual employees, and return the ability of a worker to apply for a leave.
+9) sort the employment list according to name, age, departments, year of employment, etc. 
+
 
 
 ## Assumptions
