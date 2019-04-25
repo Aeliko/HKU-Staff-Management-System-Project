@@ -5,11 +5,11 @@ using namespace std;
 
 
 
-#include "struct1.h"
-#include "read_original_record1.h"
-#include "search1.h"
-#include "edit1.h"
-#include "searchSalary1.h"
+#include "struct.h"
+#include "read_original_record.h"
+#include "search.h"
+#include "edit.h"
+#include "searchSalary.h"
 
 
 
@@ -27,8 +27,6 @@ int main() {
     searchSalary("larger", 6000, head);
     // edit("role", search("name", "tre", head));
     // cout <<"\n"<< search("name", "tre", head)->role;
-
-
-
+    deleteNode(*head);
     return 0;
 }
