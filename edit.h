@@ -1,18 +1,21 @@
-void edit(string choice, employee *current) {
-  string parm;
-  switch (choice) {
-  case "name":
-    parm = "name";
-    break;
-  
-  case "age":
-    parm = "age";
-    break;
-  case "role":
-    parm = "role";
-    break;
-  default:
-    break;
-  }
-  cin >> current->parm;
+Node *edit(string choice, Node *current) {
+    string parm;
+
+    if (choice == "name") {
+        cin >> current->name;
+    }   else if (choice == "age") {
+        cin >> current->age;
+
+    }   else if (choice == "role") {
+        cin >> current->role;
+
+    }
+
+    // while (current != NULL) {
+    //     if ((current->parm) == target) {
+    //         return current;
+    //     } else
+    //         current = current->next;
+    // }
+    return NULL;
 }
