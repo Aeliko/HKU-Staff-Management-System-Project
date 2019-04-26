@@ -52,7 +52,10 @@ int main() {
         } else
         if (userInput == "Search") {
             string para = "", target;
-            cin >> para >> target;
+            cout << "Please enter required parameter: ";
+            cin >> para;
+            cout << "Please enter target: ";
+            cin >> target;
             Node *current = head;
             while (current != NULL) {
                 if (search(para,target,current) != NULL)
@@ -71,11 +74,14 @@ int main() {
         // }
         if (userInput == "edit") {
             string para = "", target;
-            cin >> para >> target;
+            cout << "Please enter required parameter: ";
+            cin >> para;
+            cout << "Please enter target: ";
+            cin >> target;
             Node *current = head;
             while (current != NULL) {
                 if (search(para,target,current) != NULL) {
-                    edit(para,current);
+                    edit(para,current, attribute_name);
                 }
                 current = current->next;
             }
@@ -110,31 +116,6 @@ int main() {
         cout << "\n";
     }
     cout << "Bye~";
-    // exit(0);
-
-
-
-    // Node * current = head;
-    // while (current != NULL) {
-    //     cout << current -> salary << " ";
-    //     current = current->next;
-    // }
-    // // insertEmployee(tail, 0);
-    // // bubbleSort(head);
-    // build_sorted(sorted_salary_head, head);
-    // current = sorted_salary_head;
-    // while (current != NULL) {
-    //     cout << current -> salary << " ";
-    //     current = current->next;
-    // }
-
-
-
-
-    // cout <<"\n"<< search("name", "tre", head)->role;
-    // searchSalary("larger", 6000, head);
-    // edit("role", search("name", "tre", head));
-    // cout <<"\n"<< search("name", "tre", head)->role;
-    // deleteNode(*head);
+    
     return 0;
 }
