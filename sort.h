@@ -1,4 +1,4 @@
-void sort(string attr, Node *head, Node *tail)
+void sort(string attr, Node *&head, Node *&tail)
 Node *current = head;
 Node *end = tail;
 Node *temp = tail;
@@ -22,7 +22,7 @@ while (swapped) {
 
 
 //two, one, three
-void swap(Node *one, Node *two) {
+void swap(Node *&one, Node *&two) {
   two->next = one->next;    //three
   one->next = two;
 }
