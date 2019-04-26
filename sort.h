@@ -1,4 +1,4 @@
-void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
+void sort(string attr, Node *head, Node *tail, string attribute_name) {
     Node *current = head;
     Node *end = tail;
     Node *temp = tail;
@@ -10,7 +10,7 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
           while (current->next != end) {
               cout << "adf";
 
-            if (current->next->id > current->id) {
+            if (current->next->id < current->id) {
                 cout <<"iugkdfj";
               swap(current, current->next);
               swapped = 1;
@@ -22,7 +22,7 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
         }
     } else if (attr == "name") {
         while (current->next != end) {
-          if (current->next->name > current->name) {
+          if (current->next->name < current->name) {
             swap(current, current->next);
             swapped = 1;
           }
@@ -33,7 +33,7 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
       }
   } else if (attr == "salary") {
         while (current->next != end) {
-          if (current->next->salary > current->salary) {
+          if (current->next->salary < current->salary) {
             swap(current, current->next);
             swapped = 1;
           }
@@ -44,7 +44,7 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
     }
     } else if (attr == "role") {
           while (current->next != end) {
-            if (current->next->role > current->role) {
+            if (current->next->role < current->role) {
               swap(current, current->next);
               swapped = 1;
             }
@@ -55,7 +55,7 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
         }
     } else if (attr == "age") {
         while (current->next != end) {
-          if (current->next->age > current->age) {
+          if (current->next->age < current->age) {
             swap(current, current->next);
             swapped = 1;
           }
@@ -66,14 +66,14 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
       }
   } else if (attr == attribute_name) {
         while (current->next != end) {
-          if (current->next->attributes > current->attributes) {
+          if (current->next->attributes < current->attributes) {
             swap(current, current->next);
             swapped = 1;
           }
           if (current->next->next == end) {
-            temp = current->next;
+            current = current->next;
           }
-          current = current->next;
+          
       }
     }
       // while (current->next != end) {
@@ -94,7 +94,7 @@ void sort(string attr, Node *&head, Node *&tail, string attribute_name) {
 
 
 //two, one, three
-void swap(Node *&one, Node *&two) {
+void swap(Node *one, Node *two) {
     cout << "wqer";
   two->next = one->next;    //three
   one->next = two;

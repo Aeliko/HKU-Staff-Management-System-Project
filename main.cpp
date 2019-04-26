@@ -4,12 +4,16 @@
 using namespace std;
 
 
-
-#include "struct.h"
+#include "cipher.h"
+#include "createEmployee.h"
+#include "deleteNodes.h"
+#include "edit.h"
 #include "read_original_record.h"
 #include "search.h"
-#include "edit.h"
 #include "searchSalary.h"
+#inlcude "sort.h"
+#include "struct.h"
+#include "writeFile.h"
 
 
 
