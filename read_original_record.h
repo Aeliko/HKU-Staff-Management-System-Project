@@ -1,11 +1,11 @@
-void read_origianal_record(Node * & head, Node * & tail)
+void read_origianal_record(Node * & head, Node * & tail, string &attributeName)
 {
     ifstream fin;
     fin.open("employ.txt");
-    int n = 0;
+    if (fin >> attributeName)
     while (fin >> n) {
         Node * p = new Node;
-        p->id = n;
+        fin >> p->id;
         fin >> p->name;
         fin >> p->age;
         fin >> p->salary;
