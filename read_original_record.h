@@ -1,4 +1,4 @@
-void read_origianal_record(Node * & head, Node * & tail, string &attributeName)
+int read_origianal_record(Node * & head, Node * & tail, string &attributeName)
 {
     ifstream fin;
     fin.open("employ.txt");
@@ -26,4 +26,8 @@ void read_origianal_record(Node * & head, Node * & tail, string &attributeName)
     }
     // tail->next = NULL;
     fin.close();
+    if (attributeName != "")
+    return 1;
+    else
+    return 0;
 }
