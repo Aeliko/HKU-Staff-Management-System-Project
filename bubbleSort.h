@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/c-program-bubble-sort-linked-list/
+
 void bubbleSort(struct Node *start)
 {
     int swapped, i;
@@ -32,5 +34,5 @@ void swap(struct Node *a, struct Node *b)
 {
     int temp = a->salary;
     a->salary = b->salary;
-    b->salary = temp; 
+    b->salary = temp;
 }
