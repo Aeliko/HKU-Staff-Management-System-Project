@@ -1,34 +1,30 @@
-Node *search(string choice, string target, Node *head) {
-    string parm;
-    Node *current = head;
+Node *search(string choice, string target, Node *current) {
+    // Node *current = head;
 
 
     if (choice == "name") {
-        parm = "name";
-        while (current != NULL) {
+        // while (current != NULL) {
             if ((current->name) == target) {
                 return current;
-            } else
-                current = current->next;
-        }
+            }
+        //         current = current->next;
+        // }
 
     }   else if (choice == "age") {
-        parm = "age";
-        while (current != NULL) {
-            if (to_string(current->age) == target) {
+        // while (current != NULL) {
+        //     if (to_string(current->age) == target) {
                 return current;
-            } else
-                current = current->next;
-        }
+
+        //         current = current->next;
+        // }
 
     }   else if (choice == "role") {
-        parm = "role";
-        while (current != NULL) {
+        // while (current != NULL) {
             if ((current->role) == target) {
                 return current;
-            } else
-                current = current->next;
-        }
+            }
+        //         current = current->next;
+        // }
 
     }
 
