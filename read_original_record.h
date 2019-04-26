@@ -1,33 +1,55 @@
-int read_origianal_record(Node * & head, Node * & tail, string &attributeName)
+void read_original_record(Node * & head, Node * & tail, string &attributeName)
 {
     ifstream fin;
     fin.open("employ.txt");
-    if (fin >> attributeName)
-    while (fin >> n) {
-        Node * p = new Node;
-        fin >> p->id;
-        fin >> p->name;
-        fin >> p->age;
-        fin >> p->salary;
-        fin >> p->role;
+    int n = 0;
+    fin >> attributeName;
+    if (attributeName != "No_attribute") {
+        while (fin >> n) {
+            Node * p = new Node;
+            p->id = n;
+            fin >> p->name;
+            fin >> p->age;
+            fin >> p->salary;
+            fin >> p->role;
+            fin >> p->attributes;
 
-    	p->next = NULL;
+        	p->next = NULL;
 
-    	if (head == NULL) {
-    		head = p;
-    		tail = p;
-    	}
-    	else {
-    		tail->next = p;
-    		tail = p;
-    	}
-        n++;
-        cout << tail->id << " ";
+        	if (head == NULL) {
+        		head = p;
+        		tail = p;
+        	}
+        	else {
+        		tail->next = p;
+        		tail = p;
+        	}
+            n++;
+        }
+    }
+    else {
+        while (fin >> n) {
+            Node * p = new Node;
+            p->id = n;
+            fin >> p->name;
+            fin >> p->age;
+            fin >> p->salary;
+            fin >> p->role;
+
+            p->next = NULL;
+
+            if (head == NULL) {
+                head = p;
+                tail = p;
+            }
+            else {
+                tail->next = p;
+                tail = p;
+            }
+            n++;
+        }
+
     }
     // tail->next = NULL;
     fin.close();
-    if (attributeName != "")
-    return 1;
-    else
-    return 0;
 }
