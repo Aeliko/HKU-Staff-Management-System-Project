@@ -5,5 +5,5 @@ struct Node {
   float salary;
   string role;
   Node *next;
-  string attributes[100];
+  string attributes;
 };
