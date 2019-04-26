@@ -1,19 +1,13 @@
-void searchSalary(string choice, int target, Node *head) {
-  Node *current = head;
+Node *searchSalary(string choice, int target, Node *current) {
   if (choice == "larger") {
-      while (current != NULL) {
-        if ((int) (current->salary) >= target) {
-          cout << current->name << "\n";
+        if ((current->salary) >= target) {
+          return current;
         }
-        current = current->next;
-      }
   }
   else if (choice == "smaller") {
-    while (current != NULL) {
-      if ((int) (current->salary) <= target) {
-        cout << current->name << "\n";
+      if ((current->salary) <= target) {
+        return current;
       }
-      current = current->next;
-    }
   }
+  return NULL;
 }
