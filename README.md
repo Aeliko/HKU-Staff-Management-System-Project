@@ -26,8 +26,10 @@
   When Exit selected, the programme ends. The programme will then write the updated information into a .txt file named employOut.txt, and free all dynamic memory used in the programme.
   When Display is selected, the programme display the information of each employees.
   When Search is selected, the programme search and display information of employees having the same value of the targeted attribute entered by the user. The user is then asked to enter the attribute name the user wants to search for, followed by the targeted value. Employee ID, name, age, salary and role of satisfying employees will then be displayed on screen.
-  When Edit is selected, the program will change the existing information to the user input. The user will be asked to enter the parameter to be changed, followed by the ID of the employee to be edited, and the new value
-
+  When Edit is selected, the program will change the existing information to the user input. The user will be asked to enter the parameter to be changed, followed by the ID of the employee to be edited, and the new value. The attribute will then be edited to a new one.
+  When Delete is selected, the Node of an employee will be deleted. All information of that employee will be removed.
+  When searchSalary is selected, all employees having a higher or lower income than a target will be displayed. the program will ask for a value of "larger" or "smaller", followed by the targeted amount of salarry, to determine whether to search for a higher or lower salary.
+  When addAttribute is selected, the user can add at most one custom attribute. The programme will ask for the name of the attribute. The value of 
 
 
 ## Assumptions
