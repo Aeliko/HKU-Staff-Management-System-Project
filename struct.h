@@ -1,8 +1,8 @@
 struct Node {
   int id;
   string name;
-  float age;
-  float salary;
+  int age;
+  int salary;
   string role;
   Node *next;
   string attributes;

@@ -12,9 +12,9 @@ Node *search(string choice, string target, Node *current) {
 
     }   else if (choice == "age") {
         // while (current != NULL) {
-        //     if (to_string(current->age) == target) {
+            if (to_string(current->age) == target) {
                 return current;
-
+            }
         //         current = current->next;
         // }
 
@@ -26,6 +26,10 @@ Node *search(string choice, string target, Node *current) {
         //         current = current->next;
         // }
 
+    }   else if (choice == "id") {
+        if (to_string(current->id) == target) {
+            return current;
+        }
     }
 
     // while (current != NULL) {

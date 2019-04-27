@@ -1,3 +1,5 @@
-123 tre 23 5000 lmao
-456 vor 40 6000 ggwp
-789 lau 50 7000 asap
+condition
+
+123 tre 23 5000 lmao good
+456 vor 40 6000 ggwp bad
+789 lau 50 7000 asap poor
