@@ -69,7 +69,6 @@ int main() {
             cout << "Please enter required name: ";
             cin >> employeeName;
             while (current != NULL) {
-              cout << "GAY" << endl;
                 if (search("name", employeeName, current) != NULL) {
                   if (search("name", employeeName, current) == head) {
                     deleteHead(head);
@@ -78,11 +77,9 @@ int main() {
                     cout << temp->name << endl;
                     deleteEmployee(temp);
                   }
-                  cout << "HI" << endl;
                 }
               temp = current;
             current = current->next;
-            cout << "Nigga" << endl;
             }
         } else
         if (userInput == "Edit") {
@@ -111,7 +108,6 @@ int main() {
             while (current != NULL) {
                 if (searchSalary(choice,target,current) != NULL) {
                     display(attribute_name, searchSalary(choice,target,current));
-                    // cout << searchSalary(choice,target,current)->id << "\n";
                 }
                 current = current->next;
             }
@@ -138,6 +134,8 @@ int main() {
     }
     cout << "Bye~" << endl;
     writeFile(head, "employOut.txt", attribute_name);
+    rename("employ.txt", "employTemp.txt");
+    rename("employOut.txt", "employ.txt");
     deleteNodes(head);
 
 
