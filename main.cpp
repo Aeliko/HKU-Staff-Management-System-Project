@@ -32,7 +32,7 @@ int main() {
     Node * sorted_salary_head = NULL;
     Node * sorted_salary_tail = NULL;
     read_original_record(head, tail, attribute_name);
-    cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute): ";
+    cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute, insertEmployee): ";
     cin >> userInput;
     cout << "\n\n";
     while (userInput != "Exit") {
@@ -121,7 +121,7 @@ int main() {
         } else cout << "Invalid input!" << "\n";
 
 
-        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute): ";
+        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute, insertEmployee): ";
         cin >> userInput;
         cout << "\n\n";
     }
