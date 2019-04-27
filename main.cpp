@@ -70,9 +70,12 @@ int main() {
             cout << "Please enter required name: ";
             cin >> employeeName;
             while (current->next != NULL) {
+              cout << "GAY" << endl;
                 if (search("name", employeeName, current->next) != NULL)
-                    deleteEmployee((search("name", employeeName, current)));
+                    cout << "HI" << endl;
+                    deleteEmployee(search("name", employeeName, current));
             current = current->next;
+            cout << "Nigga" << endl;
             }
         }
         if (userInput == "Edit") {
