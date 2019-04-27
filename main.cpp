@@ -69,17 +69,15 @@ int main() {
             string employeeName;
             cout << "Please enter required name: ";
             cin >> employeeName;
-            while (current != NULL) {
+            while (current->next != NULL) {
               cout << "GAY" << endl;
-                if (search("name", employeeName, current->next) != NULL) {
-                  deleteEmployee(search("name", employeeName, current));
-                  cout << "HI" << endl;
-                  break;
-                }
+                if (search("name", employeeName, current->next) != NULL)
+                    cout << "HI" << endl;
+                    deleteEmployee(search("name", employeeName, current));
             current = current->next;
             cout << "Nigga" << endl;
             }
-        }
+        } else
         if (userInput == "Edit") {
             string para = "", target;
             cout << "Please enter required parameter: ";
@@ -123,7 +121,7 @@ int main() {
         } else cout << "Invalid input!" << "\n";
 
 
-        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute): " << endl;
+        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute): ";
         cin >> userInput;
         cout << "\n\n";
     }
