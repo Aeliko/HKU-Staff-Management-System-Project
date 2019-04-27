@@ -40,8 +40,8 @@ int main() {
         if (userInput == "Display") {
             Node *current = head;
             if (attribute_name == "No_attribute") {
-                cout << "ID" << "\t" << "Name" << "\t" << "Age" << "\t" << "Salary" << "\t" << "Role" << "\n";
-            } else  cout << "ID" << "\t" << "Name" << "\t" << "Age" << "\t" << "Salary" << "\t" << "Role" << "\t" << attribute_name << "\n";
+                cout << "ID" << "\t" << "Name" << "\t" << "Age" << "\t" << "Salary" << "\t" << "Role" << "Fired\t" << "\n";
+            } else  cout << "ID" << "\t" << "Name" << "\t" << "Age" << "\t" << "Salary" << "\t" << "Role" << "\t" << "Fired\t" << attribute_name << "\n";
 
             while (current != NULL) {
                 display(attribute_name, current);
