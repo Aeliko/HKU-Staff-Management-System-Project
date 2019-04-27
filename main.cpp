@@ -71,14 +71,15 @@ int main() {
             string employeeName;
             cout << "Please enter required name: ";
             cin >> employeeName;
-            while (current->next != NULL) {
+            while (current != NULL) {
               cout << "GAY" << endl;
                 if (search("name", employeeName, current) != NULL) {
                   if (search("name", employeeName, current) == head) {
                     deleteHead(head);
                   }
                   else {
-                    deleteEmployee(search("name", employeeName, temp));
+                    cout << temp->name << endl;
+                    deleteEmployee(temp);
                   }
                   cout << "HI" << endl;
                 }
