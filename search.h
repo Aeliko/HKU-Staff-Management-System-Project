@@ -7,7 +7,6 @@ Node *search(string choice, string target, Node *current) {
             }
 
     }   else if (choice == "age") {
-        // while (current != NULL) {
             if (to_string(current->age) == target) {
                 return current;
             }

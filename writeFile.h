@@ -16,7 +16,6 @@ int writeFile(Node *head, string file, string attributeName) {
     fout << current->salary << endl;
     fout << current->role << endl;
     fout << current->fired << endl;
-    // fout << current->next << endl;
     fout << current->attributes << endl;
     current = current->next;
   }

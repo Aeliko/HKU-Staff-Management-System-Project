@@ -52,6 +52,5 @@ void read_original_record(Node * & head, Node * & tail, string &attributeName)
         }
 
     }
-    // tail->next = NULL;
     fin.close();
 }
