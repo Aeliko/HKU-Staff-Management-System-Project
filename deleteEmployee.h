@@ -1,4 +1,4 @@
-//Modified functionn provided by ENGG1340
+//Modified function from ENGG1340
 void deleteEmployee(Node *lastEmployee)
 {
 	Node *employee = lastEmployee->next;
