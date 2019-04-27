@@ -1,4 +1,8 @@
 //Modified function from ENGG1340
+
+// head_insert: Insert a node at the head of the linked list
+// input: head - the head of the linked list
+//	   	  current - the current pointer to the list
 void head_insert(Node * & head, Node *current)
 {
 	Node * p = new Node;
@@ -15,6 +19,9 @@ void head_insert(Node * & head, Node *current)
 
 // assume that after points to a node
 // i.e., after not equals null
+// insert: insert a node after the "after" Node
+// input: after - a pointer to a node after current
+//	   	  current - the current pointer to the list
 void insert( Node * after, Node *current)
 {
 	Node * p = new Node;
@@ -47,7 +54,9 @@ Node * find_prev( Node * head, float salary)
 
 	return current;
 }
-
+// priint_list: print the list on screen
+// input: head - the head of the linked list
+// output: printing the list
 void print_list(Node * head)
 {
     Node * current = head;
@@ -60,6 +69,9 @@ void print_list(Node * head)
 	cout << "NULL\n";
 }
 
+// buildSortedList: build a sorted list according to salary
+// input: sorted_salary_head - the head pointer to the list
+// 		  sorted_salary_tail - the tail pointer to the list
 void buildSortedList(Node *&sorted_salary_head, Node *&sorted_salary_tail, Node *&head)
 {
     Node *current = head, * after_this;

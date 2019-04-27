@@ -1,3 +1,9 @@
+// read_original_record: read the information from the .txt file to the linked list
+// input: head - the head of the linked list
+//        tail - the tail of the linked list
+//        attribute_name - name of custom attribute
+
+
 void read_original_record(Node * & head, Node * & tail, string &attributeName)
 {
     ifstream fin;
@@ -52,5 +58,6 @@ void read_original_record(Node * & head, Node * & tail, string &attributeName)
         }
 
     }
+    // tail->next = NULL;
     fin.close();
 }

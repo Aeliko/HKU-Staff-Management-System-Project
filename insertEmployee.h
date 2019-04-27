@@ -1,3 +1,7 @@
+// insertEmployee: insert an employee at the end of the list
+// input:  after - the Node before the inserted Node
+//         attribute_name - name of custom attribute
+
 void insertEmployee( Node * after, string customAttribute)
 {
     Node *employee = new Node;
@@ -15,7 +19,7 @@ void insertEmployee( Node * after, string customAttribute)
     cout << "Enter Role: ";
 
     cin >> employee->role;
-    cout << "Enter whether Fired (Y: 1 / N: 0): ";
+    cout << "Enter whether Fired (Enter 1 for yes / 0 for no): ";
 
     cin >> employee->fired;
 

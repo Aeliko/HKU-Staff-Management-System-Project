@@ -1,3 +1,8 @@
+// edit: Edit the information of an employee
+// input:   choice - the parameter to be changed
+//          current - the current pointer to the list
+//         attribute_name - name of custom attribute
+
 Node *edit(string choice, Node *current, string attribute_name) {
   string parm;
   if (choice == "Name") {
@@ -34,6 +39,7 @@ Node *edit(string choice, Node *current, string attribute_name) {
 
     }
     else cout << "Invalid input" << endl;
+
 
     return NULL;
 }

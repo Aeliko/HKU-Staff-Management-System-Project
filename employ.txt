@@ -1,26 +1,12 @@
-condition
-123
-tre
-23
-5000
-lmao
-0
-good
-456
-vor
-40
-6000
-ggwp
-0
-bad
-789
-lau
-50
-7000
-asap
-1
-poor
+No_attribute
 
-asap
-0
-poor
+1001 Chris_Wong 18 5000 Waiter 0
+1002 May_Chan 25 18000 Manager 0
+1003 Joe_Leung 45 15000 Janitor 0
+1004 Christy_Cheung 18 14000 Waiter 0
+1005 Ronald_Lim 50 9000 Waiter 0
+1006 Timothy_Yu 33 9000 Waiter 0
+1007 Angela_Yau 27 10500 Chef 0
+1008 Wolfe_Lai 32 9000 Chef 0
+1009 Ying_Shek 63 8000 Chef 0
+1010 David_Tam 34 8000 Chef 0

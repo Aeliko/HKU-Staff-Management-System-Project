@@ -1,3 +1,9 @@
+// writeFile: write the linked list to a .txt file
+// input: head - the head of the linked list
+//        file - the name of the text file
+//        attribute_name - name of custom attribute
+
+
 #include <fstream>
 
 
@@ -16,6 +22,7 @@ int writeFile(Node *head, string file, string attributeName) {
     fout << current->salary << endl;
     fout << current->role << endl;
     fout << current->fired << endl;
+    // fout << current->next << endl;
     fout << current->attributes << endl;
     current = current->next;
   }
