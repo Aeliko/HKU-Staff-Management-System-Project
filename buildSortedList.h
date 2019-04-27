@@ -70,7 +70,7 @@ void print_list(Node * head)
 
 
 
-void buildSortedList(Node *&sorted_salary_head, Node *&sorted_salary_tail, Node *head)
+void buildSortedList(Node *&sorted_salary_head, Node *&sorted_salary_tail, Node *&head)
 {
     Node *current = head, * after_this;
 
