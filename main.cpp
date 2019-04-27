@@ -32,10 +32,10 @@ int main() {
     Node * sorted_salary_head = NULL;
     Node * sorted_salary_tail = NULL;
     read_original_record(head, tail, attribute_name);
-    cout << "Please select your action: ";
+    cout << "Please select your action: (Exit, Display, Search, Edit, searchSalary, addAttribute)";
     cin >> userInput;
     cout << "\n\n";
-    while (userInput != "exit") {
+    while (userInput != "Exit") {
         if (userInput == "insertEmployee") {
             insertEmployee(tail, attribute_name);
         } else
@@ -119,7 +119,7 @@ int main() {
         cin >> userInput;
         cout << "\n\n";
     }
-    cout << "Bye~";
+    cout << "Bye~" << endl;
     writeFile(head, "employOut.txt", attribute_name);
     deleteNode(head);
 

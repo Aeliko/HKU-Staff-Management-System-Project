@@ -31,7 +31,7 @@ Node *search(string choice, string target, Node *current) {
             return current;
         }
     }   else if (choice == "fired") {
-        if (current->fired == ((int) target)) {
+        if (current->fired == stoi(target)) {
             return current;
         }
     }
