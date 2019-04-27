@@ -1,3 +1,4 @@
+//Modified function from ENGG1340
 void deleteNodes(Node *head) {
   Node *current = head;
   while (current->next != NULL) {

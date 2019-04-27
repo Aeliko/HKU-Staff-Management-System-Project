@@ -1,3 +1,4 @@
+//Modified function from ENGG1340
 void deleteHead( Node * & head)
 {
 	if (head != NULL) {

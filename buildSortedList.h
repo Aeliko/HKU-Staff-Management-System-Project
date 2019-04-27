@@ -1,6 +1,4 @@
-//functions originally from ENGG1340
-
-
+//Modified function from ENGG1340
 void head_insert(Node * & head, Node *current)
 {
 	Node * p = new Node;
@@ -62,14 +60,6 @@ void print_list(Node * head)
 	cout << "NULL\n";
 }
 
-
-
-
-
-
-
-
-
 void buildSortedList(Node *&sorted_salary_head, Node *&sorted_salary_tail, Node *&head)
 {
     Node *current = head, * after_this;
@@ -83,7 +73,7 @@ void buildSortedList(Node *&sorted_salary_head, Node *&sorted_salary_tail, Node 
 		else
 			insert(after_this, current);
 
-		print_list(sorted_salary_head);
+		//print_list(sorted_salary_head);
 
     current = current->next;
     }
