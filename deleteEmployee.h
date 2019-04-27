@@ -1,4 +1,4 @@
-void deleteEmployee( Node *lastEmployee)
+void deleteEmployee(Node *lastEmployee)
 {
 	Node *employee = lastEmployee->next;
 	lastEmployee->next = employee->next;

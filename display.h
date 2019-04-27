@@ -5,7 +5,7 @@ void display(string attribute_name, Node *current) {
             cout << current -> name << "\t";
             cout << current -> age << "\t";
             cout << current -> salary << "\t";
-            cout << current -> role << "\n\n";
+            cout << current -> role << endl << endl;
     }
     else {
         // cout << "ID" << "\t" << "Name" << "\t" << "Age" << "\t" << "Salary" << "\t" << "Role" << "\t" << attribute_name << "\n";
@@ -14,6 +14,6 @@ void display(string attribute_name, Node *current) {
             cout << current -> age << "\t";
             cout << current -> salary << "\t";
             cout << current -> role << "\t";
-            cout << current -> attributes << "\n\n";
+            cout << current -> attributes << endl << endl;
     }
 }

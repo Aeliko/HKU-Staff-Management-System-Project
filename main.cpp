@@ -17,7 +17,7 @@ using namespace std;
 // #include "head_insert.h"
 // #include "find_prev.h"
 // #include "build_sorted.h"
-// #include "delete.h"
+#include "deleteEmployee.h"
 // #inlcude "sort.h"
 // #include "bubbleSort.h"
 #include "writeFile.h"
@@ -32,7 +32,7 @@ int main() {
     Node * sorted_salary_head = NULL;
     Node * sorted_salary_tail = NULL;
     read_original_record(head, tail, attribute_name);
-    cout << "Please select your action: (Exit, Display, Search, Edit, searchSalary, addAttribute)";
+    cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute): ";
     cin >> userInput;
     cout << "\n\n";
     while (userInput != "Exit") {
@@ -64,14 +64,17 @@ int main() {
             }
             cout << "\n";
         } else
-        // if (userInput == "delete") {
-        //     Node *current = head;
-        //     while (current != NULL) {
-        //         if (search("name","trevor",current) != NULL)
-        //             delete_node((search("name","trevor",current)));
-        //     current = current->next;
-        //     }
-        // }
+        if (userInput == "Delete") {
+            Node *current = head;
+            string employeeName;
+            cout << "Please enter required name: ";
+            cin >> employeeName;
+            while (current->next != NULL) {
+                if (search("name", employeeName, current->next) != NULL)
+                    deleteEmployee((search("name", employeeName, current)));
+            current = current->next;
+            }
+        }
         if (userInput == "Edit") {
             string para = "", target;
             cout << "Please enter required parameter: ";
@@ -115,7 +118,7 @@ int main() {
         } else cout << "Invalid input!" << "\n";
 
 
-        cout << "Please select your action: " << endl;
+        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute): " << endl;
         cin >> userInput;
         cout << "\n\n";
     }
