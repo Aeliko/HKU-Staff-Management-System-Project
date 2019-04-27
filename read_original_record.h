@@ -12,6 +12,7 @@ void read_original_record(Node * & head, Node * & tail, string &attributeName)
             fin >> p->age;
             fin >> p->salary;
             fin >> p->role;
+            fin >> p->fired;
             fin >> p->attributes;
 
         	p->next = NULL;
@@ -35,6 +36,7 @@ void read_original_record(Node * & head, Node * & tail, string &attributeName)
             fin >> p->age;
             fin >> p->salary;
             fin >> p->role;
+            fin >> p->fired;
 
             p->next = NULL;
 

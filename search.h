@@ -30,6 +30,10 @@ Node *search(string choice, string target, Node *current) {
         if (to_string(current->id) == target) {
             return current;
         }
+    }   else if (choice == "fired") {
+        if (current->fired == ((int) target)) {
+            return current;
+        }
     }
 
     // while (current != NULL) {
