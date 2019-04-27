@@ -1,4 +1,4 @@
-void deleteNode(Node *head) {
+void deleteNodes(Node *head) {
   Node *current = head;
   while (current->next != NULL) {
     Node *p = current->next;

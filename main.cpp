@@ -13,7 +13,7 @@ using namespace std;
 #include "searchSalary.h"
 #include "insertEmployee.h"
 #include "display.h"
-// #include "build_sorted.h"
+ #include "buildSortedList.h"
 #include "deleteEmployee.h"
 // #inlcude "sort.h"
 // #include "bubbleSort.h"
@@ -30,7 +30,7 @@ int main() {
     Node * sorted_salary_head = NULL;
     Node * sorted_salary_tail = NULL;
     read_original_record(head, tail, attribute_name);
-    cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute, insertEmployee): ";
+    cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute, insertEmployee, sortBySalary): ";
     cin >> userInput;
     cout << "\n\n";
     while (userInput != "Exit") {
@@ -125,16 +125,20 @@ int main() {
                 current->attributes = "";
                 current = current->next;
             }
-        } else cout << "Invalid input!" << "\n";
+        } else
+        if (userInput == "sortBySalary") {
+          buildSortedList(sorted_salary_head, sorted_salary_tail,head);
+        }
+        else cout << "Invalid input!" << "\n";
 
 
-        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute, insertEmployee): ";
+        cout << "Please select your action (Exit, Display, Search, Edit, Delete, searchSalary, addAttribute, insertEmployee, sortBySalary): ";
         cin >> userInput;
         cout << "\n\n";
     }
     cout << "Bye~" << endl;
     writeFile(head, "employOut.txt", attribute_name);
-    deleteNode(head);
+    deleteNodes(head);
 
 
     return 0;
