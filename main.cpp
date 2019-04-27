@@ -123,6 +123,8 @@ int main() {
             }
         } else
         if (userInput == "sortBySalary") {
+          sorted_salary_head = NULL;
+          sorted_salary_tail = NULL;
           buildSortedList(sorted_salary_head, sorted_salary_tail,head);
         }
         else cout << "Invalid input!" << "\n";
