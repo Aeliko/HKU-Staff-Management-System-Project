@@ -21,6 +21,7 @@ using namespace std;
 // #inlcude "sort.h"
 // #include "bubbleSort.h"
 #include "writeFile.h"
+#include "deleteHead.h"
 
 
 
@@ -66,14 +67,22 @@ int main() {
         } else
         if (userInput == "Delete") {
             Node *current = head;
+            Node *temp = head;
             string employeeName;
             cout << "Please enter required name: ";
             cin >> employeeName;
             while (current->next != NULL) {
               cout << "GAY" << endl;
-                if (search("name", employeeName, current->next) != NULL)
-                    cout << "HI" << endl;
-                    deleteEmployee(search("name", employeeName, current));
+                if (search("name", employeeName, current) != NULL) {
+                  if (search("name", employeeName, current) == head) {
+                    deleteHead(head);
+                  }
+                  else {
+                    deleteEmployee(search("name", employeeName, temp));
+                  }
+                  cout << "HI" << endl;
+                }
+              temp = current;
             current = current->next;
             cout << "Nigga" << endl;
             }
