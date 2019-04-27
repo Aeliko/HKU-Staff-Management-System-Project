@@ -15,6 +15,9 @@ void insertEmployee( Node * after, string customAttribute)
     cout << "Enter Role: ";
 
     cin >> employee->role;
+    cout << "Enter whether Fired (Y: 1 / N: 0): ";
+
+    cin >> employee->fired;
 
     employee->next = NULL;
     if (customAttribute != "No_attribute") {

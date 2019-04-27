@@ -4,7 +4,6 @@
 using namespace std;
 
 #include "struct.h"
-// #include "cipher.h"
 // #include "createEmployee.h"
 #include "deleteNodes.h"
 #include "read_original_record.h"
@@ -15,10 +14,9 @@ using namespace std;
 #include "display.h"
  #include "buildSortedList.h"
 #include "deleteEmployee.h"
-// #inlcude "sort.h"
-// #include "bubbleSort.h"
 #include "writeFile.h"
 #include "deleteHead.h"
+#include "findTail.h"
 
 
 
@@ -126,6 +124,7 @@ int main() {
           sorted_salary_head = NULL;
           sorted_salary_tail = NULL;
           buildSortedList(sorted_salary_head, sorted_salary_tail,head);
+          findTail(sorted_salary_head, tail);
         }
         else cout << "Invalid input!" << "\n";
 
