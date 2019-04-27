@@ -35,6 +35,5 @@ Node *edit(string choice, Node *current, string attribute_name) {
     }
     else cout << "Invalid input" << endl;
 
-
     return NULL;
 }
