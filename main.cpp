@@ -134,7 +134,7 @@ int main() {
     }
     cout << "Bye~" << endl;
     writeFile(head, "employOut.txt", attribute_name);
-    rename("employ.txt", "employTemp.txt");
+    rename("employ.txt", "employBackup.txt");
     rename("employOut.txt", "employ.txt");
     deleteNodes(head);
 

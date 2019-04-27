@@ -1,5 +1,0 @@
-condition
-
-123 tre 23 5000 lmao 0 good
-456 vor 40 6000 ggwp 0 bad
-789 lau 50 7000 asap 1 poor
