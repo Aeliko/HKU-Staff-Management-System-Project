@@ -18,6 +18,17 @@
 9) Sort the employment list according to name, age, departments, year of employment, etc. 
 
 
+## User Instruction
+
+  This programme requires employ.txt and employOut.txt in the same path to function properly
+  When the programme starts, it reads information from employ.txt in the background, which stores the name of the custom attribute and employee ID, name, age, monthly salary, role, state of employment and value of custom attribute (if applicable) of each employees respectively. 
+  After the reading the initial information, the program asks for a user input. The user can choose Exit, Display, Search, Edit, Delete, searchSalary, addAttribute.
+  When Exit selected, the programme ends. The programme will then write the updated information into a .txt file named employOut.txt, and free all dynamic memory used in the programme.
+  When Display is selected, the programme display the information of each employees.
+  When Search is selected, the programme search and display information of employees having the same value of the targeted attribute entered by the user. The user is then asked to enter the attribute name the user wants to search for, followed by the targeted value. Employee ID, name, age, salary and role of satisfying employees will then be displayed on screen.
+  When Edit is selected, the program will change the existing information to the user input. The user will be asked to enter the parameter to be changed, followed by the ID of the employee to be edited, and the new value
+
+
 
 ## Assumptions
 
